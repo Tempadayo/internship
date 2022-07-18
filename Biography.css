@@ -1,0 +1,162 @@
+@charset "UTF-8";
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'spartan',sans-serif;
+}
+li{
+    list-style: none;
+}
+header{
+    height:90px;
+    background-color:rgb(222, 230, 230);
+}
+header h1 {
+    padding:20px;
+    margin-left:30px;
+    color:black
+}
+header h1:hover{
+    color:darkorange;
+}
+header p{
+    padding-top:20px;
+    color:black
+}
+.botn{
+    justify-content: right;
+}
+ /* === ラジオボタンは非表示 ================== */
+ #langChenge input[type="radio"]{
+    display    : none;
+  }
+
+   /* === 各ラジオボタンのラベルをボタンに変更 == */
+  #langChenge label{
+    display    : inline-block;
+    border     : 1px solid #ccc;
+    box-shadow : 2px 2px #999;
+    padding    : 1px 3px;
+    font-size:10px;
+    margin-left:10px;
+  }
+
+   
+   /* === 選択されていない言語は非表示にする ==== */
+  #langEn:not(:checked) ~ * *:lang(en) {
+    display    : none;
+  }
+   
+   /* === 選択されている言語のラベル色を変更 ==== */
+  #langJa:checked ~ label[for="langJa"] {
+    background : #ffa64d;
+  }
+  #langEn:checked ~ label[for="langEn"] {
+    background : #ffa64d;
+  }
+
+.icon1{
+    display:flex;
+}
+.icon1 ul{
+    display: flex;
+    margin:0 0 0 auto;
+}
+.icon1 li{
+    padding:30px 40px 30px 30px;
+    margin-right:40px;
+}
+.icon1 a{
+    color:black;
+    font-weight: bold;
+}
+.icon1 a:hover{
+    color:darkorange;
+}
+.bigpic{
+    display: flex;
+    padding:180px;
+}
+.bigpic img{
+    width:800px;
+}
+
+.text{
+    margin:100px;
+}
+.text p{
+    letter-spacing: 3px;
+}
+.text h2{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+footer{
+    background-color: rgb(222, 230, 230);
+    height: auto;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    padding:30px;
+}
+.bottom p{
+    padding-right:280px;
+}
+.project2 h2{
+    padding:60px;
+    font-size:40px;
+}
+.project1{
+        padding:20px;
+        display: flex;
+}
+.project3 {
+    padding:20px;
+    display: flex;
+}
+.project2 h3{
+    padding:30px;
+    font-size:20px;
+}
+.project2 a{
+    padding:20px;
+    font-size:20px;
+}
+.project2 p{
+    padding:0px 20px 0px 20px;
+    font-size:20px;
+}
+.qrcode{
+    display: flex;
+}
+.qrcode p a{
+    padding-left: 50px;;
+}
+.contact img{
+    padding-left:300px;
+}
+.project4 p{
+    letter-spacing: 5px;
+    font-size:17px;
+    padding-right:20px;
+}
+.project1 p{
+    padding-right:20px;
+    letter-spacing: 5px;
+    font-size:17px;
+}
+.samune{
+    text-align:right;
+    padding-right:40px;
+}
+.samune video{
+    width:650px;
+}
+.detail{
+    text-decoration: underline;
+}
+.detail2:hover{
+    color:#ffa64d;
+}
